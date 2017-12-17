@@ -3,11 +3,11 @@ require 'pry'
 class Dog
 
   attr_accessor :name
-  @@all = Array.new
+  @@all = []
 
   def initialize(name)
     @name = name
-    @all << self
+    @@all << self
   end
 
   def self.clear_all
